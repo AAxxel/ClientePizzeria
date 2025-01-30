@@ -22,6 +22,7 @@ namespace ClientePizzeria
 
             CreateUser user = new CreateUser()
             {
+                idUsuario = 0,
                 NombreUsuario = textBoxUserName.Text,
                 Email = textBoxEmail.Text,
                 Telefono = textBoxTelefono.Text,
@@ -38,6 +39,7 @@ namespace ClientePizzeria
                     MessageBox.Show("Usuario registrado con éxito.");
                     Login login = new Login();
                     login.Show();
+                    Close();
                 }
                 else
                 {

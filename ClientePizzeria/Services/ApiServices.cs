@@ -58,7 +58,7 @@ namespace ClientePizzeria.Services
                 if (!response.IsSuccessStatusCode)
                 {
                     Console.WriteLine($"Error en POST: {response.StatusCode}");
-                    throw new Exception($"{response.ReasonPhrase}");
+                    throw new Exception($"{response}");
 
                 }
 

@@ -39,7 +39,6 @@
             inputTelefono = new TextBox();
             inputEmail = new TextBox();
             buttonEditar = new Button();
-            button1 = new Button();
             button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)panel).BeginInit();
             SuspendLayout();
@@ -116,23 +115,13 @@
             // 
             // buttonEditar
             // 
-            buttonEditar.Location = new Point(679, 74);
+            buttonEditar.Location = new Point(655, 74);
             buttonEditar.Name = "buttonEditar";
-            buttonEditar.Size = new Size(75, 23);
+            buttonEditar.Size = new Size(99, 23);
             buttonEditar.TabIndex = 5;
             buttonEditar.Text = "Editar";
             buttonEditar.UseVisualStyleBackColor = true;
             buttonEditar.Click += buttonEditar_Click;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(598, 74);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 6;
-            button1.Text = "Guardar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -151,7 +140,6 @@
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
-            Controls.Add(button1);
             Controls.Add(buttonEditar);
             Controls.Add(inputEmail);
             Controls.Add(inputTelefono);

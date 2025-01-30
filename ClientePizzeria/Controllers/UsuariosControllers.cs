@@ -36,12 +36,13 @@ namespace Controllers
             }
         }
 
-        public async Task<UserResponse> AgregarCliente(UserResponse data)
+        public async Task<UserResponse> AgregarUsuario(UserResponse data)
         {
 
             try
             {
-                var usuario = await ApiServices.postData<UserResponse>("Cliente/agregar-cliente", data);
+                MessageBox.Show("Nombre: " + data.NombreUsuario + "email: " + data.Email + "telefono: " + data.Telefono);
+                var usuario = await ApiServices.postData<UserResponse>("Usuario/agregar-usuario", data);
 
                 if (usuario == null)
                 {

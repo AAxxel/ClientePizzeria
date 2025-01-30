@@ -16,6 +16,7 @@ namespace ClientePizzeria.Models
 
     public class CreateUser
     {
+        public int idUsuario { get; set; }
         public int idRol { get; set; }
         public string NombreUsuario { get; set; }
         public string Email { get; set; }

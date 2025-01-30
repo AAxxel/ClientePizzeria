@@ -33,8 +33,8 @@ namespace ClientePizzeria.Views
                 inputNombre.Text = filaSeleccionada.Cells[1].Value.ToString();
                 inputPrecio.Text = filaSeleccionada.Cells[2].Value.ToString();
                 inputImpuesto.Text = filaSeleccionada.Cells[3].Value.ToString();
-                inputCategoria.Text = filaSeleccionada.Cells[4].Value.ToString();
-                inputProveedor.Text = filaSeleccionada.Cells[5].Value.ToString();
+                inputCategoria.Text = filaSeleccionada.Cells[5].Value.ToString();
+                inputProveedor.Text = filaSeleccionada.Cells[6].Value.ToString();
                 
 
                 updateProducto.IdProducto = Convert.ToInt32(filaSeleccionada.Cells[0].Value.ToString());

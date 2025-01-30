@@ -97,11 +97,11 @@ namespace ClientePizzeria
         private async void button1_Click(object sender, EventArgs e)
         {
             updateUser.idRol = Convert.ToInt32(inputRol.Text);
-            updateUser.NombreUsuario = inputName.Text;
-            updateUser.Email = inputEmail.Text;
-            updateUser.Telefono = inputTelefono.Text;
+            updateUser.NombreUsuario = "inputName.Text";
+            updateUser.Email = "inputEmail.Text";
+            updateUser.Telefono = "inputTelefono.Text";
 
-            var user = await usuarioControler.AgregarCliente(updateUser);
+            var user = await usuarioControler.AgregarUsuario(updateUser);
             if (user == null)
             {
                 return;
